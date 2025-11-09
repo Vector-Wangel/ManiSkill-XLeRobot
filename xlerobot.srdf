@@ -13,6 +13,7 @@
     <disable_collisions link1="Upper_Arm" link2="Wrist_Pitch_Roll" reason="Default"/>
     <disable_collisions link1="Upper_Arm" link2="Base" reason="Default"/>
     <disable_collisions link1="Moving_Jaw" link2="Wrist_Pitch_Roll" reason="Default"/>
+    <disable_collisions link1="Rotation_Pitch" link2="base_link" reason="Default"/>
     
     <!-- Second arm collision settings -->
     <disable_collisions link1="Base_2" link2="Rotation_Pitch_2" reason="Adjacent"/>
@@ -27,8 +28,10 @@
     <disable_collisions link1="Upper_Arm_2" link2="Wrist_Pitch_Roll_2" reason="Default"/>
     <disable_collisions link1="Upper_Arm_2" link2="Base_2" reason="Default"/>
     <disable_collisions link1="Moving_Jaw_2" link2="Wrist_Pitch_Roll_2" reason="Default"/>
+    <disable_collisions link1="Rotation_Pitch_2" link2="base_link" reason="Default"/>
     
     <!-- Disable collisions between the two arms -->
     <disable_collisions link1="Base" link2="Base_2" reason="Default"/>
     <disable_collisions link1="base_link" link2="Base_2" reason="Default"/>
+    
 </robot>
